@@ -1,0 +1,238 @@
+body {
+    background-color: rgb(225, 228, 233)
+}
+
+.mensagem {
+    font-family: sans-serif, system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #565a6292;
+    font-weight: 300;
+    font-size: 24px;
+
+}
+
+#coluna {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+}
+
+.automacao-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999999;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.relatorio-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999999;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#automacao {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 20px;
+}
+
+#relatorio {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 20px;
+}
+
+#report-container {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 20px;
+}
+
+
+
+.item {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00497A;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.hubcountbi {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00497A;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    grid-column: span 2;
+    position: relative;
+}
+
+.bidafolha {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00497A;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.hubconcilia {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00497A;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.lalur {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00497A;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    grid-column: span 1;
+    position: relative;
+}
+
+.report {
+    background-color: white;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: red;
+    border-style: outset;
+    border-width: 1px;
+    box-sizing: border-box;
+    grid-column: span 2;
+    height: 200px;
+    position: relative;
+}
+
+.report-message {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00497A;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
+
+.imagens {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+.ajuda {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.texto {
+    margin: 0;
+    color: red;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 30px;
+
+}
+
+
+@media (max-width: 768px) {
+
+    #automacao {
+        display: grid;
+        grid-template-columns: repeat(2, 220px);
+        gap: 20px;
+    }
+
+    #relatorio {
+        display: grid;
+        grid-template-columns: repeat(2, 220px);
+        gap: 20px;
+    }
+
+    #coluna {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    #report-container {
+        display: grid;
+        grid-template-columns: repeat(2, 220px);
+        gap: 20px;
+    }
+
+    .texto {
+        margin: 0;
+        color: red;
+        font-size: 12px;
+        font-weight: normal;
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+
+    #relatorio {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 200px));
+        gap: 20px;
+    }
+
+}
