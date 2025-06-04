@@ -2,7 +2,35 @@ body {
     background-color: rgb(225, 228, 233)
 }
 
-.mensagem {
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hidden-popup {
+    display: none;
+}
+
+.hidden-modulos {
+    display: none !important;
+}
+
+#mensagem {
     font-family: sans-serif, system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #565a6292;
     font-weight: 300;
@@ -48,8 +76,6 @@ body {
     gap: 20px;
 }
 
-
-
 .item {
     font-family: Arial, Helvetica, sans-serif;
     color: #00497A;
@@ -68,7 +94,7 @@ body {
     position: relative;
 }
 
-.hubcountbi {
+.hubcountbi-card {
     font-family: Arial, Helvetica, sans-serif;
     color: #00497A;
     font-weight: 700;
@@ -87,7 +113,7 @@ body {
     position: relative;
 }
 
-.bidafolha {
+.bidafolha-card {
     font-family: Arial, Helvetica, sans-serif;
     color: #00497A;
     font-weight: 700;
@@ -105,7 +131,7 @@ body {
     position: relative;
 }
 
-.hubconcilia {
+.hubconcilia-card {
     font-family: Arial, Helvetica, sans-serif;
     color: #00497A;
     font-weight: 700;
@@ -123,7 +149,7 @@ body {
     position: relative;
 }
 
-.lalur {
+.lalur-card {
     font-family: Arial, Helvetica, sans-serif;
     color: #00497A;
     font-weight: 700;
@@ -142,7 +168,7 @@ body {
     position: relative;
 }
 
-.report {
+.report-card {
     background-color: white;
     height: 80px;
     padding: 10px;
@@ -193,19 +219,24 @@ body {
 
 }
 
+.em-manutencao {
+    background-color: rgb(187, 100, 100);
+    border: 2px solid red;
+}
+
 
 @media (max-width: 768px) {
 
     #automacao {
         display: grid;
-        grid-template-columns: repeat(2, 220px);
-        gap: 20px;
+        grid-template-columns: repeat(2, 210px);
+        gap: 10px;
     }
 
     #relatorio {
         display: grid;
-        grid-template-columns: repeat(2, 220px);
-        gap: 20px;
+        grid-template-columns: repeat(2, 210px);
+        gap: 10px;
     }
 
     #coluna {
@@ -215,7 +246,7 @@ body {
 
     #report-container {
         display: grid;
-        grid-template-columns: repeat(2, 220px);
+        grid-template-columns: repeat(2, 200px);
         gap: 20px;
     }
 
@@ -229,10 +260,10 @@ body {
         margin-top: 30px;
     }
 
-    #relatorio {
+    /* #relatorio {
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, 200px));
         gap: 20px;
-    }
+    } */
 
 }

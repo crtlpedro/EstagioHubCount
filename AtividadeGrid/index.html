@@ -5,89 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Atividade GRID</title>
-    <h1 class="mensagem">Bem-vindo, admin admin!</h1>
 </head>
 
 <body>
+    <!-- Popup-->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Digite seu nome:</h2>
+            <input type="text" id="inputNome" placeholder="Digite aqui!">
+            <button onclick="inserirNome()">Confirmar</button>
+        </div>
+    </div>
+    <!-- Corpo com os GRIDS-->
+    <h1 id="mensagem">Bem-vindo, admin admin!</h1>
+    <label>
+        <input type="checkbox" id="mostrarAtivos">
+        Mostar apenas módulos ativos.
+    </label>
+    <!--Tabelas-->
     <div id="coluna">
         <div>
             <p class="automacao-name">Automação</p>
             <div id="automacao">
                 <div class="item">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('simplesNacional')">
                     <img src="imagens/simplesnacional.svg" alt="" class="imagens">
                     <span>Simples<br>Nacional</span>
                 </div>
                 <div class="item">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('hubAlertas')">
                     <img src="imagens/hubalertas3.svg" alt="" class="imagens">
                     <span>HubAlertas+</span>
                 </div>
-                <div class="item">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="item" data-card="dctfMnt">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('dctfAutomatizada')">
                     <img src="imagens/dtfautomatizada.svg" alt="" class="imagens">
                     <span>DCTF<br>Automatizada</span>
                 </div>
                 <div class="item">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('impostoRetido')">
                     <img src="imagens/calcimposto.png" alt="" class="imagens">
                     <span>Cálculo de<br>Impostos<br>Retidos</span>
                 </div>
                 <div class="item">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('centralCnd')">
                     <img src="imagens/centralcnd.svg" alt="" class="imagens">
                     <span>Central CND</span>
                 </div>
-                <div class="item">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="item" data-card="mensagemGv">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('msgGoverno')">
                     <img src="imagens/hubalertas2.svg" alt="" class="imagens">
                     <span>Mensagens do<br>Governo</span>
                 </div>
-                <div class="item">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="item" data-card="consultaMnt">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('consultaSimei')">
                     <img src="imagens/consultaimpostos.svg" alt="" class="imagens">
                     <span>Consulta<br>Simei</span>
                 </div>
-                <div class="item">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="item" data-card="impostoPG">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('impostoPago')">
                     <img src="imagens/consultaimpostos.svg" alt="" class="imagens">
                     <span>Impostos<br>Pagos</span>
                 </div>
             </div>
+            <p class="contagemAut">Quantidade de Cards: </p>
         </div>
         <div>
             <p class="relatorio-name">Relatórios</p>
             <div id="relatorio">
-                <div class="hubcountbi">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="hubcountbi-card" data-card="hbCountBi">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('hubcountbi')">
                     <img src="imagens/hubcountbi.svg" alt="" class="imagens">
                     <span>HubCount BI</span>
                 </div>
-                <div class="bidafolha">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="bidafolha-card">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda" onclick="mostrarAjuda('bidafolha')">
                     <img src="imagens/bidafolha.svg" alt="" class="imagens">
                     <span>BI da Folha</span>
                 </div>
-                <div class="hubconcilia">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="hubconcilia-card">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda"
+                        onclick="mostrarAjuda('hubconcilia')">
                     <img src="imagens/hubconcilia.png" alt="" class="imagens">
                     <span>HubConcilia</span>
                 </div>
-                <div class="lalur">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="lalur-card" data-class="lalurMnt">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda" onclick="mostrarAjuda('lalur')">
                     <img src="imagens/lalur.png" alt="" class="imagens">
                     <span>Lalur</span>
                 </div>
             </div>
             <br>
             <div id="report-container">
-                <div class="report">
-                    <img src="imagens/ajuda.png" alt="" class="ajuda">
+                <div class="report-card">
+                    <img src="imagens/ajuda.png" alt="botão de ajuda" class="ajuda" onclick="mostrarAjuda('report')">
                     <span class="texto">Módulo liberado apenas para atendimento</span>
                     <span class="report-message">Report Contábil</span>
                 </div>
             </div>
+            <p class="contagemRP">Quantidade de Cards: </p>
         </div>
     </div>
 </body>
