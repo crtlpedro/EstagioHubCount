@@ -1,0 +1,18 @@
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.checkbox {
+    padding-left: 0%;
+}
+
+.span-checkbox {
+    color: #00497a;
+  font-family: sans-serif, system-ui, "Segoe UI", "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
