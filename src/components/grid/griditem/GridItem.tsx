@@ -3,7 +3,7 @@ import type { Module } from "../../../types/module";
 import "./GridItem.css";
 import HelpPopup from "../../helpopup/HelpPopup";
 import GridImage from "../gridimagem/GridImage";
-import ReportTitle from "../../ReportTitle";
+import ReportTitle from "../../reporttitle/ReportTitle";
 import FavoriteButton from "../favoritebutton/FavoriteButton";
 
 interface IGridItemProps {

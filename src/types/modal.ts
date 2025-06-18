@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useUser } from "../components/Wrapper";
+import { useUser } from "../components/wrapper/Wrapper";
 
 export interface ModalProps {
   modalOpen: boolean;

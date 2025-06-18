@@ -1,6 +1,6 @@
 // components/favorites/FavoriteSection.tsx
 import React, { useState } from "react";
-import { useFavorites, useModules } from "../../Wrapper";
+import { useFavorites, useModules } from "../../wrapper/Wrapper";
 import GridItem from "../../grid/griditem/GridItem";
 import "./FavoriteSection.css";
 

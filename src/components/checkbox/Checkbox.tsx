@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCheckbox } from '../Wrapper';
+import { useCheckbox } from '../wrapper/Wrapper';
 import "./Checkbox.css"
 
 const Checkbox: React.FC = () => {

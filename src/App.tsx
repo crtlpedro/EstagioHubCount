@@ -1,5 +1,5 @@
 import Grid from "./components/grid/Grid";
-import { Wrapper } from "./components/Wrapper";
+import { Wrapper } from "../src/components/wrapper/Wrapper";
 import Checkbox from "./components/checkbox/Checkbox";
 import Header from "./components/header/Header";
 import Modal from "./components/modal/Modal";

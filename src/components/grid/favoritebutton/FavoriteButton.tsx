@@ -1,5 +1,5 @@
 import React from "react";
-import { useFavorites } from "../../Wrapper";
+import { useFavorites } from "../../wrapper/Wrapper";
 import "./FavoriteButton.css";
 
 interface FavoriteButtonProps {

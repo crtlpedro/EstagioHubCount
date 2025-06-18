@@ -5,10 +5,10 @@ import type {
   IProviderProps,
   IModuleContext,
   iFavoriteContext,
-} from "../types/Wrapper";
-import { userLogic } from "../types/user";
-import type { Module } from "../types/module";
-import { modules } from "../utils/modules";
+} from "../../types/Wrapper";
+import { userLogic } from "../../types/user";
+import type { Module } from "../../types/module";
+import { modules } from "../../utils/modules";
 
 export const CheckboxContext = createContext<ICheckboxContext | undefined>(
   undefined

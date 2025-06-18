@@ -1,4 +1,4 @@
-import { useUser } from "../../components/Wrapper";
+import { useUser } from "../wrapper/Wrapper";
 import FavoriteSection from "./favoritesection/FavoriteSection";
 import "./Header.css"
 

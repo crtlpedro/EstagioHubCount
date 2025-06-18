@@ -2,7 +2,7 @@ import React from "react";
 import GridItem from "./griditem/GridItem";
 import type { groupedModules } from "../../types/groupSection";
 import "./Grid.css"
-import { useCheckbox } from "../Wrapper";
+import { useCheckbox } from "../wrapper/Wrapper";
 
 interface GridProps {
   groupedModules: groupedModules[];
