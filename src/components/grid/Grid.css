@@ -1,0 +1,32 @@
+.grid-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 80px;
+  margin: 0;
+  padding: 20px;
+  justify-items: start;
+  background-color: rgb(225, 228, 233);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(225, 228, 233);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.section-name {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}

@@ -1,0 +1,52 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.popup-message {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00497a;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.popup-button {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00497a;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.help {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.popup-button {
+  color: #00497a;
+  font-family: sans-serif, system-ui, "Segoe UI", "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 300;
+  background-color: rgb(225, 228, 233);
+  border-color: black;
+  border-width: 0.5px;
+  margin-top: 8px;
+}

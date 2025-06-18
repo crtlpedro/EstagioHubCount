@@ -1,0 +1,73 @@
+.favorite-section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fafafa;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+.favorite-name {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00497a;
+  font-weight: 700;
+  font-size: 16px;
+  align-self: left;
+}
+
+.favorites-toggle {
+  text-align: right;
+  margin-bottom: 0.5rem;
+  align-items: row;
+}
+
+.favorites-toggle button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.favorites-list h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.favorites-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.favorite-item {
+  flex: 1 1 260px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.item-grid-favorite .item-grid {
+  width: 260px;
+  display: flex;
+}
+
+.favorites-cards {
+  align-items: stretch;
+}
+
+.remove-favorite-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: #ff4d4d;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 20px;
+  text-align: center;
+}
+
